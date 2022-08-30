@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Datos\CONEXIONMAESTRA.cs" />
+    <Compile Include="Datos\DatosCargos.cs" />
+    <Compile Include="Datos\DatosPersonal.cs" />
+    <Compile Include="Logica\Bases.cs" />
+    <Compile Include="Logica\LogicaCargos.cs" />
+    <Compile Include="Logica\LogicaPersonal.cs" />
+    <Compile Include="Presentacion\ControlPersona.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentacion\ControlPersona.Designer.cs">
+      <DependentUpon>ControlPersona.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +66,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Presentacion\ControlPersona.resx">
+      <DependentUpon>ControlPersona.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -81,8 +96,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Datos\" />
-    <Folder Include="Logica\" />
+    <None Include="Resources\editar.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\reloj-de-pared.png" />
@@ -95,6 +109,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\transferencia-de-datos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cohete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rectangulo-redondeado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rectangulo-redondeado %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rectangulo-redondeado2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cuadricula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo sin fondo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo sin fondo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo final.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lupa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flecha-hacia-atras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
